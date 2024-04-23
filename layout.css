@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 *{
     margin: 0;
@@ -12,11 +11,11 @@ body{
 }
 
 .hero-container{
-    background-image: url(./assets/BAM!\ logo.png);
+    background-image: url(./assets/hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 100vh;
 }
 
 .hero-wrapper{
@@ -36,6 +35,35 @@ body{
     font-size: clamp(1rem, 2vw, 2vw);
     text-align: center;
 }
+
+.navigation {
+    background-color: #272727;
+    position: fixed; 
+    width: 100%;
+  }
+
+  .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .navigation li {
+    float: left;
+  }
+
+  .navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navigation li a:hover {
+    background-color: #555;
+  }
 
 .content-container{
     height: 100vh;
@@ -156,30 +184,9 @@ h2{
     }
 }
 
-.video-container{
-   min-height: 60vh;
-   margin-top: 5rem;
+.FAQ{
+    margin-top: 5rem;
 }
-
-.video-container h1{
-    font-size: clamp(2rem, 5vw, 5vw);
-    text-align: center;
-}
-
-.video-yt{
-    width: 20rem;
-    height: auto;
-    box-shadow: 0 0 20px 0 rgb(0, 0, 0);
-}
-
-@media screen and (min-width: 1200px) {
-    .video-yt{
-        width: 80rem;
-        max-width: 100rem;
-        height: 40rem;
-    }
-}
-
 .accordion-container{
     min-height: 50vh;
 }
@@ -230,7 +237,7 @@ h2{
 
 .accordion-container .accordion.active .panel{
     min-height: 115px;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -281,3 +288,4 @@ h2{
         margin-inline: 5rem;
     }
 }
+
